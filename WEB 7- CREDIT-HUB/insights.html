@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navigation">
+        <div class="navbar">
+            <ul id="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="sovereign.html">Sovereign Debt Hub</a>
+                <a href="sacco.html">Sacco Hub</a>
+                <a href="SMEs.html">SMEs Credit Debt Advisory</a>
+                <a href="insights.html">Insights and Blogs</a>
+                <a href="career.html">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="insights">
+        <h1>Insights and Blogs</h1>
+        <p>What's the indicator that a country is losing its sovereignty through the public debt?</p>
+    </div>
+
+    <!-- section 3 footer-->
+
+    <section class="footer">
+        <div class="footercontent">
+            <div class="quote">
+                <p>Our path to financial sustainability begins here:<br> Credit Risk Control and Management.</p>
+            </div>
+            
+            <div class="quicklinks">
+                <p>Quick Links</p>
+                <a href="about.html">About Us</ion-icon></a>
+                <a href="sovereign.html">Sovereign Debt Hub</ion-icon></a>
+                <a href="sacco.html">Sacco Hub</ion-icon></a>
+                <a href="SMEs.html">SMEs Credit Debt Advisory</ion-icon></a>
+            </div>
+
+            <div class="workinghours">
+                <p>Working Hours</p>
+                <p>8:00am - 5:00pm</p>
+            </div>
+            
+            <div class="footersocials">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+
+            
+        </div>
+        
+
+    </section>
+
+    <script>
+        var navigation = document.getElementById("navigation");
+        var menu = document.getElementById("menu");
+        
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navigation.classList.add("sticky");
+            }
+            else{
+                navigation.classList.add("sticky");
+            }
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

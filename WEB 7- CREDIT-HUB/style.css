@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* section 1 banner */
+.banner{
+    display: flex;
+    color: grey;
+}
+.call{
+    display: flex;
+}
+.call img{
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+}
+.call h1{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.logo img{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 250px;
+    width: 700px;
+}
+.socials{
+    
+    font-size: 25px;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+.socials a{
+    padding: 10px;
+    margin-left: 10px;
+}
+.location{
+    margin-left: 20px;
+    display: flex;
+}
+.location img{
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+}
+.location h1{
+    
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* section 1 navbar */
+
+.navbar ul{
+    display: flex;
+    
+}
+.navbar a {
+
+    padding: 15px 22px;
+    color: white;
+    background-color: rgba(240, 6, 6, 0.952); 
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+    font-size: 115%; /* Increase the font size */
+    
+}
+
+.navbar a:hover {
+    background-color: rgba(240, 6, 6, 0.952); 
+    color: white; /* Highlight color on hover */
+    transform: scale(1.1);
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.9;
+}
+nav.sticky:hover {
+    opacity: 1; 
+}
+
+
+/* content appearing effect */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* section 2 home content */
+
+.introstatement{
+    background-image: url('images/titanic4.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    padding-top: 350px;
+    margin-top: 20px;
+    height: 500px;
+    width: 1366px;
+}
+.introstatement h3{
+    color: white;
+    font-size: 22px;
+}
+.whyus h2{
+    
+    color: white;
+    margin-top: 50px;
+    margin-left: 42.7%;
+}
+.whyus{
+    margin-top: 50px;
+    height: 450px;
+    background-image: url('images/options.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top h3{
+    margin-top: 30px;
+    border-width: 2px;         /* Same border width for all sides */
+    border-style: solid;       /* Solid border style */
+    border-color: rgba(240, 6, 6, 0.952);         /* Red border color */
+    padding: 20px 30px;        /* Padding inside the border */
+    display: inline-block;     /* Shrink-wraps around the text */
+    border-radius: 4px;        /* Rounded corners (optional) */ 
+}
+.bottom h3{
+    margin-top: 30px;
+    border-width: 2px;         /* Same border width for all sides */
+    border-style: solid;       /* Solid border style */
+    border-color: rgba(240, 6, 6, 0.952);         /* Red border color */
+    padding: 20px 30px;        /* Padding inside the border */
+    display: inline-block;     /* Shrink-wraps around the text */
+    border-radius: 4px;        /* Rounded corners (optional) */ 
+}
+.extra{
+    margin-right: 57px;
+}
+.serviceslist{
+    
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 427px;
+    border-bottom: 20px solid rgba(240, 6, 6, 0.952);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.serviceslist a{
+    text-decoration: none;
+    color: grey;
+}
+.serviceslist h2{
+    color: #fff;
+    background: rgba(240, 6, 6, 0.952);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.serviceslist ul{
+    position: relative;
+    background: #fff;
+}
+.serviceslist ul li{
+    list-style: none;
+    color: grey;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+.serviceslist ul:hover li{
+    opacity: 0.2;
+}
+.serviceslist ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    background: rgba(240, 6, 6, 0.952);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: #fff;
+    opacity: 1;
+}
+.serviceslist ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(240, 6, 6, 0.952);
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-1px);
+}
+.serviceslist ul li:hover span{
+    background: #fff;
+    color: rgba(240, 6, 6, 0.952);
+}
+
+/* footer */
+.footercontent{
+    display: flex;
+    background-color: rgba(240, 6, 6, 0.952);
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+}
+.quote{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.quicklinks{
+    margin-top: 40px;
+    margin-left: 140px;
+    
+}
+.quicklinks a{
+    display: flex;
+    decoration: none;
+    color: white;
+}
+.workinghours{
+    margin-top: 40px;
+    margin-left: 140px;
+}
+.footersocials{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+
+/* About.html */
+.aboutimage{
+    color: white;
+    margin-left: 525px;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.about{
+    background-image: url('images/view.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.intro{
+    color: white;
+    padding: 50px;
+}
+.intro h2{
+    color: white;
+    margin-left: 300px;
+}
+.intro p{
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.intro2{
+    color: white;
+    padding: 10px;
+}
+.intro2 h2{
+    color: white;
+    margin-left: 500px;
+}
+.intro2 p{
+    margin-left: 30px;
+    padding: 30px;
+}
+.statements{
+    display: flex;
+    padding: 50px;
+    color: white;
+}
+.vision{
+    margin-left: 30px;
+}
+.vision h2{
+    margin-left: 150px;
+}
+.vision p{
+    margin-top: 20px;
+    color: white;
+}
+.mission{
+    margin-left: 130px;
+}
+.mission h2{
+    margin-left: 200px;
+}
+.mission p{
+    margin-top: 20px;
+    color: white;
+}
+.cores{
+    display: flex;
+    flex-direction: column;
+    margin-left: 550px;
+    color: white;
+}
+.cores p{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+}
+.title{
+    margin-left: 550px;
+    margin-top: 40px;
+    color: white;
+}
+.objectivescontent{
+    color: white;
+    margin-top: 10px;
+    margin-left: 270px;
+    margin-right: 270px;
+    padding: 10px;
+}
+
+
+/* services.html  */
+.serve{
+    background-image: url('images/invest.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.serve h1{
+    margin-left: 525px;
+    padding: 40px;
+    font-size: 3rem;
+}
+.services1{
+    margin-top: 80px;
+    display: flex;
+}
+.credit{
+    margin-left: 20px;
+    width: 1500px;
+    
+}
+.credit p{
+    margin-top: 10px;
+    
+}
+
+.debt{
+    margin-left: 20px;
+    width: 1500px;
+}
+.debt p{
+    margin-top: 10px;
+}
+.skills{
+    margin-left: 20px;
+    width: 1500px;
+}
+.skills p{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.skills h3{
+    margin-top: 10px;
+}
+.services2{
+    margin-top: 30px;
+    display: flex;
+}
+
+.counselling{
+    margin-left: 20px;
+    width: 700px;
+}
+.counselling p{
+    margin-top: 10px;
+}
+.mediation{
+    margin-left: 10px;
+    width: 800px;
+}
+.mediation p{
+    margin-top: 10px;
+}
+.risk{
+    margin-left: 10px;
+    width: 800px;
+}
+.risk p{
+    margin-top: 10px;
+}
+
+.services3{
+    margin-top: 30px;
+    display: flex;
+}
+.skip{
+    margin-left: 10px;
+    width: 600px;
+}
+.skip p{
+    margin-top: 10px;
+}
+.private{
+    margin-left: 10px;
+    width: 700px;
+}
+.private p{
+    margin-top: 10px;
+}
+.sovereign{
+    margin-left: 10px;
+    width: 700px;
+}
+.sovereign p{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* sovereign1.html */
+.sovereign1{
+    background-image: url('images/saving.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.first{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.sovereign1 h1{
+    margin-left: 500px;
+    color: white;
+    font-size: 3rem;
+    padding: 20px;
+}
+.sovereign1 h2{
+    color: white;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.second{
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.second1{
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.final{
+
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* sacco.html */
+.sacco{
+    background-image: url('images/saving.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.sacco p{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+.sacco h1{
+    margin-left: 525px;
+    font-size: 3rem;
+    padding: 20px;
+}
+.sacco h2{
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* sme.html */
+.sme{
+    background-image: url('images/Best.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.sme h1{
+    font-size: 3rem;
+    margin-left: 450px;
+    padding: 20px;
+}
+.sme p{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.sme p strong{
+    color: white;
+    margin-left: 30px;
+}
+
+
+/* insights.html */
+.insights{
+    background-image: url('images/Bank.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 550px;
+}
+.insights h1{
+    font-size: 3rem;
+    padding: 20px;
+    margin-left: 500px;
+    color: white;
+}
+.insights p{
+    margin-left: 300px;
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
+/* career.html */
+.career{
+    background-image: url('images/growing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.career h1{
+    font-size: 3rem;
+    padding: 70px;
+    margin-left: 550px;
+    color: white;
+}
+.career p{
+    margin-left: 600px;
+    margin-top: 20px;
+    color:white;
+    font-size: 1.5rem;
+}
+.career h4{
+    color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+/* contact.html */
+.contact{
+    background-image: url('images/invest2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.contact h1{
+    font-size: 3rem;
+    margin-left: 525px;
+    padding: 10px;
+    color: white;
+}
+.ban img{
+    height: 450px;
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.ban h3{
+    color: white;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+.locale{
+    display: flex;
+    color: white;
+    margin-left: 570px;
+    margin-top: 30px;
+}
+.locale img{
+    height: 50px;
+    width: 50px;
+}
+.locale h1{
+    font-size: 1rem;
+    
+}
+.caller{
+    display: flex;
+    margin-left: 570px;
+    margin-top: 30px;
+    color: white;
+}
+.caller img{
+    height: 50px;
+    width: 50px;
+}
+.caller h1{
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.socials2{
+    margin-left: 570px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.socials2 p{
+    color: white;
+}
+.socials2 a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* form */
+
+
+form {
+    background-color: rgba(192, 192, 192, 0.315);
+    color: black;
+    padding: 20px;
+    margin-left: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.form h3{
+    font-size: 3rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}

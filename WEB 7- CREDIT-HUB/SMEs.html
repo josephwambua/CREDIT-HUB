@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navigation">
+        <div class="navbar">
+            <ul id="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="sovereign.html">Sovereign Debt Hub</a>
+                <a href="sacco.html">Sacco Hub</a>
+                <a href="SMEs.html">SMEs Credit Debt Advisory</a>
+                <a href="insights.html">Insights and Blogs</a>
+                <a href="career.html">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sme">
+        <h1>SMEs Credit Debt Advisory</h1>
+        <p>The Credit Hub Africa -Consulting offers credit and debt advisory to SMEs with aim of helping
+            small and medium-sized enterprises (SMEs) to manage their credit and debt situations.<br><br>
+            We offer tailor made solutions encompassing:</p><br>
+            <p><strong>✓ Credit Management:</strong> Advising on how to effectively manage credit lines, improve credit
+                scores, and secure financing from lenders.</p><br>
+            <p><strong>✓ Debt Management:</strong> Offering strategies to handle existing debts, including restructuring debt,
+                negotiating with creditors, and consolidating loans to improve financial stability.</p><br>
+            <p><strong>✓ Financial Planning:</strong> Providing guidance on budgeting, cash flow management, and financial
+                forecasting to ensure the business can meet its debt obligations and grow sustainably.</p><br>
+            <p><strong>✓ Compliance and Risk Management:</strong> Ensuring that the business adheres to regulatory
+                requirements and mitigating financial risks associated with debt.</p><br>
+            <p>The goal is to help SMEs optimize their financial health, improve their creditworthiness, and achieve
+                better terms on loans and other financial arrangements.</p><br><br><br>
+    </div>
+
+     <!-- section 3 footer-->
+
+     <section class="footer">
+        <div class="footercontent">
+            <div class="quote">
+                <p>Our path to financial sustainability begins here:<br> Credit Risk Control and Management.</p>
+            </div>
+            
+            <div class="quicklinks">
+                <p>Quick Links</p>
+                <a href="about.html">About Us</ion-icon></a>
+                <a href="sovereign.html">Sovereign Debt Hub</ion-icon></a>
+                <a href="sacco.html">Sacco Hub</ion-icon></a>
+                <a href="SMEs.html">SMEs Credit Debt Advisory</ion-icon></a>
+            </div>
+
+            <div class="workinghours">
+                <p>Working Hours</p>
+                <p>8:00am - 5:00pm</p>
+            </div>
+            
+            <div class="footersocials">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+
+            
+        </div>
+        
+
+    </section>
+
+    <script>
+        var navigation = document.getElementById("navigation");
+        var menu = document.getElementById("menu");
+        
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navigation.classList.add("sticky");
+            }
+            else{
+                navigation.classList.add("sticky");
+            }
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
